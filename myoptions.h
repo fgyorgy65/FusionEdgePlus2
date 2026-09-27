@@ -2,7 +2,7 @@
 /* esp32-S3-devkit-C1 44 pins https://randomnerdtutorials.com/esp32-s3-devkitc-pinout-guide */
 
 #pragma once
-
+#include "myoptions.local.h"
 #ifndef ARDUINO_ESP32S3_DEV
     #define ARDUINO_ESP32S3_DEV
 #endif

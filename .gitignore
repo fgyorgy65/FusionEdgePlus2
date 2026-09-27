@@ -28,3 +28,5 @@ Thumbs.db
 # Optional local secrets
 mqttoptions.h
 data/data/wifi.csv
+myoptions.local.h
+mqttoptions.local.h
