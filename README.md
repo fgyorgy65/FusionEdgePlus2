@@ -15,13 +15,31 @@ release; subsequent updates focus on confirmed bug fixes and compatibility
 maintenance.
 
 ### Version 1.0.8
+- I updated the `touchscreen.cpp` file for 320x240 resolution.
+  The following elements now work on the 320x240 ILI9341 display:
+  status icons: FADE, TTS, RGB
+  PlayMode / station icon
+  clock area
+  spectrum area
+  Start/Stop label area
+  playlist item selection in `STATIONS` mode
 
-- Added a configurable `0-100%` brightness level for the **While not playing**
-  clock screensaver
-- Restores the normal display brightness on wake and keeps the setting
-  compatible with the automatic backlight fade feature
-- Migrates existing configurations automatically with a `100%` default, so a
-  full flash erase is not required
+- Channel selector modification:
+  The `FADE / TTS / RGB` icons disappear in STATIONS mode.
+  Double-height `-` and `+` buttons appear in their place.
+  `-`: previous channel.
+  `+`: next channel.
+
+- Volume adjustment:
+   I placed the left and right speaker icons above the level indicator.
+   Tapping the left speaker icon: decrease volume.
+   Tapping the right speaker icon: increase volume.  
+
+
+- I have added a new feature to the infrared handling: when an IR code—or a sequence of codes concatenated with a '+' sign—listed in `mqttircodes.csv` is  received, the system sends an MQTT message instead of controlling the player.
+
+Upon startup, the system loads `data\mqttircodes.csv` in addition to `ircodes.csv`. If an unknown IR code is received, the system waits for two seconds; if another code arrives during this time, it concatenates the two codes with a '+' sign. If the resulting combined code is found in `mqttircodes.csv`, the corresponding message (`msg`) defined in the file is sent via the MQTT protocol.
+For HomeAssistant settings, see: homeassistant_mqtt_beállítása.md
 
 ### Version 1.0.7
 
