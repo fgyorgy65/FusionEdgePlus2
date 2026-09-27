@@ -1,0 +1,11 @@
+button,name,msmg,ircodes
+0,0+1 porszivo,"cmnd/ESP12/RELAY3/POWER3 TOGGLE",0x410E21D+0x41038c7
+1,0+2 erosito,"cmnd/ESP12/RELAY4/POWER4 TOGGLE",0x410E21D+0x410B847
+2,zöld Bathroom ON,"homeassistant/switch/10001bb686/set ON",0x4109867 
+3,piros Bathroom OFF,"homeassistant/switch/10001bb686_power/set OFF",0x41018E7
+4,11 Bedroom ON,"homeassistant/switch/1000f2defd_power/set ON",0x41038c7+0x41038c7
+5,12 Bedroom OFF,"homeassistant/switch/1000f2defd_power/set OFF",0x41038C7+0x410B847
+6,tuner gomb gardrobe lámpa on,"homeassistant/switch/10015281fe_power/set ON",0x410E817
+7,power gomb gardrobe lámpa off,"homeassistant/switch/10015281fe_power/set OFF",0x41000FF
+8,sárga LAmp3 ON,"homeassistant/switch/10024c26ac_power/set ON",0x41058A7
+9,kék LAmp3 OFF,"homeassistant/switch/10024c26ac_power/set OFF",0x410D827

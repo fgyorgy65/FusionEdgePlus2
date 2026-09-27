@@ -1,0 +1,17 @@
+:root {
+--main-bg-color:        #010101;
+--main-text-color:      #cccccc;
+--main-hl-color:        #ffffff;
+--odd-bg-color:         #0d1200;
+--accent-color:         #96c30a;
+--accent-dark:          #617e06;
+--accent-text-color:    #000000;
+--input-border:         #253000;
+--logo:                 #96c30a;
+--logo-red:             #ff4400;
+--logo-shadow:          #617e06;
+--playlist-hover:       #1a2200;
+--section-gradient:     #111111;
+--section-border:       #444444;
+--heapbar-color:        #3ea220;
+}
